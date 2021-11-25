@@ -1,0 +1,48 @@
+/*MENU*/
+header {
+    background-image: url(../assets/img/michi5.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .navegador {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 10px;
+  
+    &__lista {
+      display: flex;
+      justify-content: space-evenly;
+      width: 50%;
+    }
+    &__img {
+      width: 100px;
+      height: 100px;
+    }
+  
+    &__item {
+      list-style: none;
+    }
+  
+    &__item a {
+      text-decoration: none;
+      font-size: 30px;
+      color: #000;
+  
+      &:hover {
+        color: rgba(255, 0, 0, 0.933);
+      }
+    }
+  }
+
+  
+/*HERO SECTION*/
+.hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }

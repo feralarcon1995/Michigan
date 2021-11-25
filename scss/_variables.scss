@@ -1,0 +1,15 @@
+
+//VARIABLES DE COLOR
+
+$colorPrincipal: #00fff2;
+$colorSecundario: #fbff00;
+
+$fuenteTitulos: verdana;
+//MIXIN 
+
+@mixin estiloTitulos($tamaño, $colorLetra){
+    font-size: $tamaño;
+    color: $colorLetra;
+    text-align: center;
+    padding: 10px 0px;
+}

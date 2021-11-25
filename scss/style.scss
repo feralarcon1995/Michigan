@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+@import 'navbar';
+@import 'footer';
+@import 'variables';
+/*MAIN*/
+
+/*Card section*/
+
+.card__column {
+  background-color: $colorPrincipal;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 150px 30px;
+}
+
+.card__column h2 {
+  padding: 30px 0px;
+}
+.card {
+  display: flex;
+  background-color: $colorSecundario;
+  width: 90%;
+  margin: 10px;
+
+  &__img {
+    width: 300px;
+    height: 300px;
+  }
+
+  &__content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+    width: 100%;
+
+    & h3 {
+      @include estiloTitulos(32px, $colorPrincipal);
+      font-family: $fuenteTitulos;
+
+      &:hover {
+        color: rgb(0, 81, 255);
+      }
+    }
+    & p {
+      color: rgb(255, 0, 0);
+    }
+  }
+
+  &__left {
+    width: 50%;
+  }
+ 
+  &__right {
+    @extend .card__left;
+    display: flex;
+    align-items: center;
+  }
+
+  &__right__contenido {
+    background: $colorSecundario;
+    margin: 10px;
+  }
+  &__right__img {
+    width: 100%;
+    height: 300px;
+  }
+
+  &__right__content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+  }
+}
+
+/*NOTICIAS SECTION*/
+
+.noticias {
+  display: flex;
+  flex-direction: column;
+  background-color: $colorSecundario;
+  margin: 10px;
+  width: 30%;
+  justify-content: space-between;
+  align-items: center;
+
+  &__img {
+    width: 100%;
+    height: 300px;
+  }
+
+  &__content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+  }
+
+  &__row {
+    background-color: #ffefbc;
+    padding: 150px 30px;
+    display: flex;
+    flex-wrap: wrap;
+
+    & h2 {
+      padding: 50px;
+    }
+  }
+}
+

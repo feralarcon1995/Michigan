@@ -1,0 +1,25 @@
+{
+  "name": "michigan",
+  "version": "1.0.0",
+  "description": "WEB CREADA PARA AFTER DE FLEXBOX - COMISION 23500  | CODERHOUSE",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feralarcon1995/Michigan.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/feralarcon1995/Michigan/issues"
+  },
+  "homepage": "https://github.com/feralarcon1995/Michigan#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.15"
+  }
+}
